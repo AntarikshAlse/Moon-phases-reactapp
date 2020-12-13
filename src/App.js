@@ -42,7 +42,17 @@ export default function App() {
   return (
     <div className="App">
       <h1>Phases of the moon</h1>
-      <input id="search" placeholder="Search for emojis" onChange={inputkeys} />
+      <input
+        id="search"
+        placeholder="Search for emojis"
+        onChange={inputkeys}
+        style={{
+          borderRadius: "8px",
+          border: 0,
+          padding: ".8rem",
+          width: "80%"
+        }}
+      />
       <h3>
         {show}:{mean}
       </h3>
